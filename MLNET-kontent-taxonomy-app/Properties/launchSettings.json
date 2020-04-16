@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "MLNET-kontent-taxonomy-app": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "development"
+      }
+    }
+  }
+}

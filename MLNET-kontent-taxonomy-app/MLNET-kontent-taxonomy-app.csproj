@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>MLNET_kontent_taxonomy_app</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="files\**" />
+    <EmbeddedResource Remove="files\**" />
+    <None Remove="files\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="KontentProductExport.cs" />
+    <Compile Remove="Models\Brewer.cs" />
+    <Compile Remove="Models\Class1.cs" />
+    <Compile Remove="Models\CustomTypeProvider.cs" />
+    <Compile Remove="Models\ExportValue.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="dgxa4tgv.zif~" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Kentico.Kontent.Delivery" Version="13.0.1" />
+    <PackageReference Include="Kentico.Kontent.Management" Version="2.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.3" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.CommandLine" Version="3.1.3" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="3.1.3" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MLNET-kontent-taxonomy-appML.Model\MLNET-kontent-taxonomy-appML.Model.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
