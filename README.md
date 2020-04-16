@@ -21,9 +21,6 @@ Included in this repository is the ML.NET Model and ML.NET Console application p
 1. Click "Proceed with import"
 1. Proceed to "Application setup" instructions below
 
-===Under Construction===
-Kentico Kontent project import instructions coming soon.
-
 ## Application setup
 
 ### Running the application
@@ -52,3 +49,13 @@ To run the app:
 ```
 5. Save the changes.
 6. Run the application.
+
+**Outcome:** The three pre-created Movie content items will now have "Listed In" taxonomy terms assigned to them in Kentico Kontent.
+
+### Testing the taxonomy term suggestion with a new content item
+1. Create a new Movie content item in Kentico Kontent
+1. Fill-in the item Name, Title, Rating, and Description
+    1. Leave the "Listed In" element blank
+1. Do **not** publish the item
+    1. The Management API used in the application can only upsert on **Unpublished** content items
+1. Run the console application
