@@ -28,7 +28,7 @@ namespace MLNET_kontent_taxonomy_appML.ConsoleApp
             Console.WriteLine($"release_year: {sampleData.Release_year}");
             Console.WriteLine($"rating: {sampleData.Rating}");
             Console.WriteLine($"duration: {sampleData.Duration}");
-            Console.WriteLine($"description : {sampleData.Description_}");
+            Console.WriteLine($"description : {sampleData.Description}");
             Console.WriteLine($"\n\nActual Listed_in: {sampleData.Listed_in} \nPredicted Listed_in value {predictionResult.Prediction} \nPredicted Listed_in scores: [{String.Join(",", predictionResult.Score)}]\n\n");
             Console.WriteLine("=============== End of process, hit any key to finish ===============");
             Console.ReadKey();

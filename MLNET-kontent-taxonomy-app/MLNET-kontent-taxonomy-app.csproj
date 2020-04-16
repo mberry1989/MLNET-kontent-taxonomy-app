@@ -1,24 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>MLNET_kontent_taxonomy_app</RootNamespace>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Compile Remove="files\**" />
-    <EmbeddedResource Remove="files\**" />
-    <None Remove="files\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Remove="KontentProductExport.cs" />
-    <Compile Remove="Models\Brewer.cs" />
-    <Compile Remove="Models\Class1.cs" />
-    <Compile Remove="Models\CustomTypeProvider.cs" />
-    <Compile Remove="Models\ExportValue.cs" />
-  </ItemGroup>
 
   <ItemGroup>
     <None Remove="dgxa4tgv.zif~" />
@@ -39,6 +25,12 @@
 
   <ItemGroup>
     <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.development.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
