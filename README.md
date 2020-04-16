@@ -21,7 +21,7 @@ To run the app:
 1. Clone the app repository with your favorite GIT client
    1. For instance, you can use [Visual Studio](https://www.visualstudio.com/vs/), [Visual Studio Code](https://code.visualstudio.com/), [GitHub Desktop](https://desktop.github.com/), etc.
    1. Alternatively, you can download the repo as a ZIP file, however, this will not adapt line endings in downloaded files to your platform (Windows, Unix).
-1. Open the solution in Visual Studio (using the _kontent-sample-app-razorpages.sln_ file).
+1. Open the solution in Visual Studio (using the _MLNET-kontent-taxonomy-app.sln_ file).
 1. Run the app.
 
 ### Connecting to your sample project
