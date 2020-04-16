@@ -1,4 +1,4 @@
-# Kentico Kontent sample Taxonomy Machine Learning Tool
+# Kentico Kontent Sample Taxonomy Machine Learning Tool
 A sample .NET Core 3.1 console application using the [Kentico Kontent Delivery .NET SDK](https://github.com/Kentico/kontent-delivery-sdk-net), [Kentico Kontent Management SDK](https://github.com/Kentico/kontent-management-sdk-net), and [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet).
 
 This application demonstrates how to use [ML.NET's multiclass classification](https://docs.microsoft.com/en-us/dotnet/machine-learning/tutorials/github-issue-classification) to suggest taxonomy terms for Kentico Kontent content item variants. 
