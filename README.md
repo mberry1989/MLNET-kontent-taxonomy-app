@@ -8,8 +8,18 @@ Included in this repository is the ML.NET Model and ML.NET Console application p
 
 ## Kentico Kontent setup
 
-### Creating the Movies project
+### Creating the Movies project using the [Template Manager](https://kentico.github.io/kontent-template-manager/import-from-file)
 1. Sign in to your [Kentico Kontent account](https://app.kontent.ai).
+1. [Create a new project](https://docs.kontent.ai/tutorials/set-up-projects/manage-projects/managing-projects#a-creating-projects)
+1. In Kentico Kontent, choose Project settings from the app menu.
+1. Under Development, choose API keys and copy the Project ID
+1. Paste the copied ID into the Project ID input on the [Template Manager](https://kentico.github.io/kontent-template-manager/import-from-file)
+1. Enable the Management API and repeat step 5 with the Management API key and Template Manager input field
+1. Drop the project export package into the Template Manager
+1. Uncheck "Publish import items"
+1. Click "Prepare import data"
+1. Click "Proceed with import"
+1. Proceed to "Application setup" instructions below
 
 ===Under Construction===
 Kentico Kontent project import instructions coming soon.
@@ -22,9 +32,9 @@ To run the app:
    1. For instance, you can use [Visual Studio](https://www.visualstudio.com/vs/), [Visual Studio Code](https://code.visualstudio.com/), [GitHub Desktop](https://desktop.github.com/), etc.
    1. Alternatively, you can download the repo as a ZIP file, however, this will not adapt line endings in downloaded files to your platform (Windows, Unix).
 1. Open the solution in Visual Studio (using the _MLNET-kontent-taxonomy-app.sln_ file).
-1. Run the app.
+1. Follow instructions below to connect to your Movies project
 
-### Connecting to your sample project
+### Connecting to your Movies project
 
 1. In Kentico Kontent, choose Project settings from the app menu.
 1. Under Development, choose API keys. 
