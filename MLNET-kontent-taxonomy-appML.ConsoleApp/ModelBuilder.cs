@@ -13,7 +13,7 @@ namespace MLNET_kontent_taxonomy_appML.ConsoleApp
     public static class ModelBuilder
     {
         private static string TRAIN_DATA_FILEPATH = @"C:\Users\MichaelB\source\repos\netflix_titles.csv\netflix_movies.csv";
-        private static string MODEL_FILEPATH = @"C:\Users\MichaelB\AppData\Local\Temp\MLVSTools\MLNET-kontent-taxonomy-appML\MLNET-kontent-taxonomy-appML.Model\MLModel.zip";
+        private static string MODEL_FILEPATH = $@"{System.IO.Directory.GetCurrentDirectory()}\MLModel.zip";
         // Create MLContext to be shared across the model creation workflow objects 
         // Set a random seed for repeatable/deterministic results across multiple trainings.
         private static MLContext mlContext = new MLContext(seed: 1);
