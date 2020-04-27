@@ -20,7 +20,7 @@ namespace MLNET_kontent_taxonomy_appML.Model
             MLContext mlContext = new MLContext();
 
             // Load model & create prediction engine
-            string modelPath = @"C:\Users\MichaelB\AppData\Local\Temp\MLVSTools\MLNET-kontent-taxonomy-appML\MLNET-kontent-taxonomy-appML.Model\MLModel.zip";
+            string modelPath = $@"{System.IO.Directory.GetCurrentDirectory()}\MLModel.zip";
             ITransformer mlModel = mlContext.Model.Load(modelPath, out var modelInputSchema);
             var predEngine = mlContext.Model.CreatePredictionEngine<ModelInput, ModelOutput>(mlModel);
 
